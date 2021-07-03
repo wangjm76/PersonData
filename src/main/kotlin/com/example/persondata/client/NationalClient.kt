@@ -21,7 +21,8 @@ class NationalClient(
         client.get()
             .uri("/?name=$name")
             .accept(MediaType.APPLICATION_JSON)
-            .retrieve().bodyToMono<NationalResponse>()
+            .retrieve()
+            .bodyToMono<NationalResponse>()
             .timeout(Duration.ofSeconds(2,0))
             .onErrorMap { HttpClientErrorException(HttpStatus.SERVICE_UNAVAILABLE) }
 }

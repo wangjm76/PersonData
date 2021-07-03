@@ -21,7 +21,8 @@ class GenderClient(
         client.get()
             .uri("/?name=$name")
             .accept(MediaType.APPLICATION_JSON)
-            .retrieve().bodyToMono<GenderResponse>()
+            .retrieve()
+            .bodyToMono<GenderResponse>()
             .timeout(Duration.ofSeconds(2,0))
             .onErrorMap { HttpClientErrorException(HttpStatus.SERVICE_UNAVAILABLE) }
 }
