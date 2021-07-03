@@ -4,7 +4,7 @@
 * spring webflux framework
 * build : gradle
 * Test : JUnit, Mockito, StepVerifier, MockWebServer
-  Integration test against real API as well as simulate different API responses by using MockWebServer
+* Integration test against real API as well as simulate different API responses by using MockWebServer
 * Assumption:
   for some names, getting nationality from https://api.nationalize.io/ may get empty list of country or multiple
   countries
