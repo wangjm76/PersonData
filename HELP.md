@@ -1,6 +1,7 @@
 # Getting Started
 
 ### Reference Documentation
+
 For further reference, please consider the following sections:
 
 * [Official Gradle documentation](https://docs.gradle.org)
@@ -11,6 +12,7 @@ For further reference, please consider the following sections:
 * [OpenFeign](https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/)
 
 ### Additional Links
+
 These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)

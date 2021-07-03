@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class PersonDataApplication
 
 fun main(args: Array<String>) {
-	runApplication<PersonDataApplication>(*args)
+    runApplication<PersonDataApplication>(*args)
 }
