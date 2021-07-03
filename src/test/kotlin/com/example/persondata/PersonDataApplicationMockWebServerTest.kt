@@ -75,7 +75,10 @@ internal class PersonDataApplicationMockWebServerTest {
                 .exchange()
                 .expectStatus().isOk
                 .expectHeader().contentType(MediaType.APPLICATION_JSON)
-                .expectBody(PersonData::class.java)
+                .expectBody()
+                .json(//language=JSON
+                    "{\"age\":69,\"gender\":\"male\",\"nationality\":\"AU\"}"
+                )
         }
 
         @Test
